@@ -1,0 +1,16 @@
+2022/8/5
+・【JS】厳格モード’use strict’;
+https://qiita.com/miri4ech/items/ffcebaf593f5baa1c112
+他人に読みやすいコード、エラーが発生しないコードを書くことについて調べた。
+今の環境では主に、宣言されていない変数の使用や書き込み不可の変数への代入をした時にエラーを返してくれる。
+スクリプトの先頭に書くことでスクリプト全体への適用、関数内で書くことで関数単位で適用となる。
+全体に適用状態でスクリプトを連結させると、連結したスクリプトにも適用される。
+なので、strictモードの適用は、「スクリプト全体」ではなく、「関数単位での適用」とする。
+
+・【JS】Node.appendChild() 
+指定した要素を親として、子要素を追加
+https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
+例  // 新しい段落要素を作成し、文書の body の末尾に追加します。
+    let p = document.createElement("p");
+    document.body.appendChild(p);
+
